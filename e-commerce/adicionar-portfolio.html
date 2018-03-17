@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-commerce Paraíba</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+      
+    <!-- Script que carrega as funções javascript -->
+    <script src="./js/app.js"></script>
+    
+    <!-- Icone no titulo da página -->
+    <link rel="shortcut icon" href="./assets/carrinho-icone.png" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <!-- NavBar Menu Topo -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand">
+                        <img class="logo-menu" src="./assets/logo.svg" alt="logotipo">
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-home"></span>&nbsp Home</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">
+                                <span class="glyphicon glyphicon-credit-card"></span>&nbsp Portfolio</a>
+                        </li>
+                        <li class="dropdown active">
+                            <a href="adicionar-produto.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-plus-sign"></span>&nbsp Adicionar Itens
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="active">
+                                    <a href="adicionar-portfolio.html">Adicionar Portfólio</a>
+                                </li>
+                                <li>
+                                    <a href="adicionar-produto.html">Adicionar Produto</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contato.html">
+                                <span class="glyphicon glyphicon-earphone"></span>&nbsp Contato</a>
+                        </li>
+                        <li>
+                            <a href="produtos.html">
+                                <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp Produtos</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <center>
+        <div id="texto-topo">
+            <p>ADICIONAR PORTFÓLIO</p>
+        </div>
+    </center>
+
+    <form class="form-group">
+        <div class="form-group" style="padding-top:40px;">
+
+            <center>
+                <label id="label1">Nome do Trabalho</label>
+                <input style="width:50%;" class="form-control" placeholder="Insira o nome do trabalho" required>
+            </center>
+
+        </div>
+        <div class="form-group">
+            <center>
+                <label id="label2">Link da Imagem</label>
+                <input style="width:50%;" class="form-control" placeholder="Insira o link da imagem" required>
+            </center>
+
+        </div>
+        <center>
+            <button style="margin-bottom:200px;margin-top:30px;width:200px;" type="submit" class="btn btn-primary btn-lg"
+                action="index.html" method="post">Adicionar</button>
+        </center>
+
+    </form>
+
+    <!-- Chamada do script que executa a ação de ir para o topo -->
+    <a href="javascript:toTop();" title="Para o alto, e avante!" id="voltar-topo" />
+    <img style="width:40px" src="./assets/seta-cima.png">
+    </a>
+
+
+    <!-- Footer - Rodapé da Página -->
+    <footer class="myFooter text-center">
+        <div class="footer">
+            <p>Front-end © 2018 - Anderson Ribeiro
+                <br>
+                <span>Copyright Reserved</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts BootStrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

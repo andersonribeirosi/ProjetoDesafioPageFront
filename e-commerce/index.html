@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-commerce Paraíba</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+ 
+    <!-- Script que carrega as funções javascript -->
+    <script src="./js/app.js"></script>
+    
+    <!-- Icone no titulo da página -->
+    <link rel="shortcut icon" href="./assets/carrinho-icone.png" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <!-- NavBar Menu Topo -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand">
+                        <img class="logo-menu" src="./assets/logo.svg" alt="logotipo">
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active">
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-home"></span>&nbsp Home</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">
+                                <span class="glyphicon glyphicon-credit-card"></span>&nbsp Portfolio</a>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="adicionar-produto.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-plus-sign"></span>&nbsp Adicionar Itens
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="adicionar-portfolio.html">Adicionar Portfólio</a>
+                                </li>
+                                <li>
+                                    <a href="adicionar-produto.html">Adicionar Produto</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contato.html">
+                                <span class="glyphicon glyphicon-earphone"></span>&nbsp Contato</a>
+                        </li>
+                        <li>
+                            <a href="produtos.html">
+                                <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp Produtos</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Imagem do sub-header logo após o navbar -->
+    <div class="sub-header">
+        <img style="margin-bottom:0px;" src="./assets/ecommerce.png" alt="imagem" class="image-header">
+    </div>
+
+    <!-- Conteúdo do subheader -->
+    <div class="sub-header">
+        <a href="produtos.html">
+            <img src="./assets/menu-animado.gif" alt="imagem" class="image-header">
+        </a>
+    </div>
+
+
+    <!-- Conteúdo das Redes Sociais -->
+    <center>
+        <div id="redes-sociais">
+            <p>Redes Sociais</p>
+            <a href="http://www.facebook.com/" target="_blank">
+                <img src="./assets/redes-sociais/facebook.svg" id="redesociais-logo">
+            </a>
+            <a href="https://br.linkedin.com/" target="_blank">
+                <img src="./assets/redes-sociais/linked.svg" id="redesociais-logo">
+            </a>
+            <a href="https://plus.google.com/" target="_blank">
+                <img src="./assets/redes-sociais/google.svg" id="redesociais-logo">
+            </a>
+        </div>
+    </center>
+
+    <!-- Chamada do script que executa a ação de ir para o topo -->
+    <a href="javascript:toTop();" title="Para o alto, e avante!" id="voltar-topo" />
+    <img style="width:40px" src="./assets/seta-cima.png">
+    </a>
+
+    <!-- Footer - Rodapé da Página -->
+    <footer class="myFooter text-center">
+        <div class="footer">
+            <p>E-Commerce Paraíba © 2018 - Anderson Ribeiro
+                <br>
+                <span>Copyright Reserved</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script do jquery -->
+    <script src="js/jquery/jquery.js" type="text/javascript"></script>
+
+    <!-- Scripts BootStrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

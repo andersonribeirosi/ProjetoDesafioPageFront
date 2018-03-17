@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-commerce Paraíba</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Script que carrega as funções javascript -->
+    <script src="./js/app.js"></script>
+    
+    <!-- Icone no titulo da página -->
+    <link rel="shortcut icon" href="./assets/carrinho-icone.png" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <!-- NavBar Menu Topo -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-home"></span>&nbsp Home</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">
+                                <span class="glyphicon glyphicon-credit-card"></span>&nbsp Portfolio</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="adicionar-produto.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-plus-sign"></span>&nbsp Adicionar Itens
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="adicionar-portfolio.html">Adicionar Portfólio</a>
+                                </li>
+                                <li>
+                                    <a href="adicionar-produto.html">Adicionar Produto</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contato.html">
+                                <span class="glyphicon glyphicon-earphone"></span>&nbsp Contato</a>
+                        </li>
+                        <li class="active">
+                            <a href="produtos.html">
+                                <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp Produtos</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="login.html">
+                                <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da Página - Portfólios -->
+    <div class="sub-header">
+        <img src="./assets/semana-consumidor.png" alt="imagem" class="image-header">
+    </div>
+
+    <div class="form-group input-group" id="consulta">
+        <span class="input-group-addon" style="background-color:#FF6347">
+            <i class="glyphicon glyphicon-search"></i>
+        </span>
+        <input name="consulta" id="txt_consulta" placeholder="O que você procura? :)" type="text" class="form-control">
+    </div>
+
+    <div style="padding-top: 10px;padding-bottom:30px;" id="texto-topo">
+        <p>PRODUTOS EM DESTAQUE</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-12 left-menu">
+                <div class="list-group">
+                    <span class="list-group-item top-menu">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp Categorias</span>
+                    <a href="produto.html" class="list-group-item active">Geral</a>
+                    <a href="informatica.html" class="list-group-item">Informática</a>
+                    <a href="#" class="list-group-item">Eletrodomesticos</a>
+                    <a href="#" class="list-group-item">Eletroportáteis</a>
+                    <a href="#" class="list-group-item">Esporte e Lazer</a>
+                    <a href="#" class="list-group-item">Malas e Acessórios</a>
+                    <a href="#" class="list-group-item">Móveis</a>
+                    <a href="#" class="list-group-item">Música</a>
+                </div>
+
+            </div>
+
+            <!-- Class Thumbnail - Produtos -->
+            <div id="thumbnail" class="col-md-3 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./assets/produtos/destaques/painel-bancada.png" alt="...">
+                    <div class="caption">
+                        <p>Painel Bancada para TV até 48" Navi Avelã - Móveis Bechara </p>
+                        <p>
+                            <center>
+                                <a style="margin-top:10px" href="#" class="btn btn-success" role="button">R$ 89,90</a>
+                                <a style="margin-top:10px" href="#" class="btn btn-default" role="button">Comprar</a>
+                            </center>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="thumbnail" class="col-md-3 col-xs-12">
+                <div class="thumbnail">
+                    <img style="width:76%" src="./assets/produtos/destaques/iphone6.png" alt="...">
+                    <div class="caption">
+                        <p>Iphone 6 32GB Cinza Espacial, Tela 4.7" IOS 8, Câmera 8MP, 4G Processador 1.4 Ghz Dual Core - Apple</p>
+                        <p>
+                            <center>
+                                <a href="#" class="btn btn-success" role="button">R$ 1.799,00</a>
+                                <a href="#" class="btn btn-default" role="button">Comprar</a>
+                            </center>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="thumbnail" class="col-md-3 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./assets/produtos/destaques/sofa-living.png" alt="...">
+                    <div class="caption">
+                        <p>Sofá Living 3 Lugares Tecido Animale Retrátil e Reclinável Camurça</p>
+                        <p>
+                            <center>
+                                <a href="#" class="btn btn-success" role="button">R$ 599,00</a>
+                                <a href="#" class="btn btn-default" role="button">Comprar</a>
+                            </center>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./assets/produtos/destaques/guarda-roupa.png" alt="...">
+                    <div class="caption">
+                        <p>Guarda Roupa Solteiro 2 Portas Retrô Milão Móveis Bechara Branco </p>
+                        <p>
+                            <center>
+                                <a style="margin-top:10px" href="#" class="btn btn-success" role="button">319,90</a>
+                                <a style="margin-top:10px" href="#" class="btn btn-default" role="button">Comprar</a>
+                            </center>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Class Thumbnail -->
+            <div class="col-md-3 col-xs-12">
+                <div class="thumbnail">
+                    <img style="width:85%;" src="./assets/produtos/destaques/fogao.png" alt="...">
+                    <div class="caption">
+                        <p style="padding-bottom:2.5%;">Fogão Brastemp 6 Bocas BFS6N Branco Vidro Interno Removível</p>
+                        <p>
+                            <br>
+                            <center>
+                                <a href="#" class="btn btn-success" role="button">R$ 1.299,99</a>
+                                <a href="#" class="btn btn-default" role="button">Comprar</a>
+                            </center>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-12">
+                <div class="thumbnail">
+                    <img style="width:63%" src="./assets/produtos/destaques/passadeira-vapor.png" alt="...">
+                    <div class="caption">
+                        <br>
+                        <p>Passadeira a Vapor Profissional Prata - Suggar</p>
+                        <p>
+                            <br>
+                            <br>
+                            <center>
+                                <a href="#" class="btn btn-success" role="button">R$ 279,00</a>
+                                <a href="#" class="btn btn-default" role="button">Comprar</a>
+                            </center>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    </center>
+
+
+    <!-- Chamada do script que executa a ação de ir para o topo -->
+    <a href="javascript:toTop();" title="Para o alto, e avante!" id="voltar-topo" />
+    <img style="width:40px" src="./assets/seta-cima.png">
+    </a>
+
+    <!-- Footer - Rodapé da Página -->
+    <footer class="myFooter text-center">
+        <div class="footer">
+            <p>E-Commerce Paraíba © 2018 - Anderson Ribeiro
+                <br>
+                <span>Copyright Reserved</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script do jquery -->
+    <script src="js/jquery/jquery.js" type="text/javascript"></script>
+
+    <!-- Scripts BootStrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
